@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+}
+
+
+/* NAVIGATION */
+
+header {
+    background: #171717;
+    padding: 20px 7%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: white;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #f28c28;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 8%;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.65),
+            rgba(0,0,0,0.65)
+        ),
+        url("../Hardware shit/Hardware shit/46 pcs.jpeg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text {
+    max-width: 650px;
+    color: white;
+}
+
+.small-title {
+    color: #f28c28;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* BUTTON */
+
+.shop-button {
+    display: inline-block;
+
+    margin-top: 30px;
+
+    background: #f28c28;
+    color: white;
+
+    padding: 15px 25px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 5px;
+}
+
+.shop-button:hover {
+    background: #d96f0c;
+}
+
+
+/* PRODUCTS */
+
+.products-section {
+    padding: 80px 7%;
+    text-align: center;
+}
+
+.products-section h2,
+.why-us h2,
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.section-description {
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.product-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+.product-card {
+    background: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+
+    padding-bottom: 25px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+}
+
+.product-card h3 {
+    margin: 20px 0 15px;
+}
+
+.product-card a {
+    color: #f28c28;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* WHY US */
+
+.why-us {
+    background: #171717;
+    color: white;
+
+    padding: 70px 7%;
+
+    text-align: center;
+}
+
+.features {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 30px;
+
+    margin-top: 40px;
+}
+
+.features div {
+    padding: 20px;
+}
+
+.features h3 {
+    margin-bottom: 10px;
+    color: #f28c28;
+}
+
+
+/* CATALOGUE */
+
+.catalogue-header {
+    text-align: center;
+    padding: 70px 20px 40px;
+}
+
+.catalogue-header h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.catalogue-header p {
+    color: #666;
+}
+
+
+/* CATALOGUE GRID */
+
+.catalogue {
+    padding: 30px 7% 80px;
+}
+
+.catalogue-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+.catalogue-card {
+    background: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.catalogue-card img {
+    width: 100%;
+    height: 280px;
+
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card-content h2 {
+    margin-bottom: 12px;
+}
+
+.card-content p {
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.card-content a {
+    display: inline-block;
+
+    background: #f28c28;
+
+    color: white;
+
+    padding: 12px 20px;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+}
+
+
+/* CONTACT */
+
+.contact {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.phone {
+    color: #f28c28;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #111;
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+/* PHONE */
+
+@media (max-width: 800px) {
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .catalogue-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+}
+
